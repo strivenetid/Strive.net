@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strive.Net Official</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: #0f0f0f;
+      color: white;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background: #101820;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 15px rgba(0,255,255,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #00eaff;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    nav a {
+      color: #00eaff;
+      margin-left: 15px;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    header {
+      padding: 30px;
+      text-align: center;
+      background: linear-gradient(135deg, #1e1e1e, #333);
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+      animation: fadein 1.2s ease;
+    }
+
+    header h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero {
+      padding: 70px 20px;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200') center/cover no-repeat;
+      position: relative;
+      animation: fadein 1.2s ease;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.7);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadein 1.2s ease;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 520px;
+      margin: 20px auto;
+      box-shadow: 0 0 12px rgba(0,255,255,0.2);
+    }
+
+    .button {
+      display: inline-block;
+      background: #00eaff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: #000;
+      text-decoration: none;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* ANIMATION */
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">📶 Strive.Net</div>
+  <div>
+    <a href="#about">Tentang</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#contact">Kontak</a>
+  </div>
+</nav>
+
+<header>
+  <h1>📶 Strive.Net</h1>
+  <p>Belajar Jaringan WiFi dari Nol • Mudah • Lengkap • Praktis</p>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Belajar WiFi dari Dasar</h2>
+    <p>Panduan lengkap memahami jaringan wireless, router, Mikrotik, dan konfigurasi WiFi dari HP saja.</p>
+    <a class="button" href="#about">Mulai Belajar</a>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>Tentang Strive.Net</h2>
+  <div class="card">
+    <p>Strive.Net adalah pusat belajar jaringan WiFi dari nol, mulai dari cara kerja sinyal,
+    konfigurasi router, Mikrotik, keamanan jaringan, hingga membuat hotspot voucheran.</p>
+  </div>
+</section>
+
+<section id="layanan" class="section">
+  <h2>Materi Belajar</h2>
+  <div class="card">
+    <p>✔ Dasar-dasar jaringan WiFi</p>
+    <p>✔ Mengenal router & access point</p>
+    <p>✔ Setting WiFi rumahan & hotspot</p>
+    <p>✔ Mikrotik dari pemula hingga mahir</p>
+    <p>✔ Keamanan WiFi & anti pembobol</p>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Kontak Strive.Net</h2>
+  <div class="card">
+    <p>WhatsApp: <b>0895635362907</b></p>
+
+    <p>Channel WhatsApp:</p>
+    <a class="button" href="https://whatsapp.com/channel/0029VbAKSyzKGGGFBHKK9c1p">
+      Buka Channel Saya
+    </a>
+
+    <p>Email: <b>strivenet@gmail.com</b></p>
+  </div>
+</section>
+
+<footer>
+  © 2025 Strive.Net | Belajar Jaringan WiFi dari Nol (QuickEdit)
+</footer>
+
+</body>
+</html>
